@@ -1,0 +1,1 @@
+console.log('phantom is ok!')
