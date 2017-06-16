@@ -26,13 +26,16 @@
 
 - 内置module
 
-
+------------
 
 # 单元测试
 
 - 有些页面（比如填写表单）做安全测试的时候每次都人工测会比较麻烦，而且是重复的操作，此时就可以借助casperjs来辅助操作，监控页面行为，异常告警，作为人工测试的辅助工具
 
+------------
+
 # 对比
+
 -phantomjs嵌套写起来比较繁琐难懂，不好维护
 
 		var page = require('webpage').create()             //新建一个页面
@@ -60,6 +63,9 @@
 		casper.thenOpen(url4);
 
 		casper.run();                                      //开始导航
+		
+------------
+
 
 # chrome 59 headless mode 
 
@@ -84,6 +90,7 @@
 
 - node模式，在node下结合child_process模块，模拟命令行进行自动化操作 >_ require("child_process").exec('chrom ...',callback)
 
+------------
 
 # web自动化工具介绍-phantomjs、casperjs、headless chrome
 
@@ -116,7 +123,7 @@
 - 是phantomjs的扩充，新增了很多api，优化了phantomjs的语法编写方式
 
 - 语法编写区别 。。。
-	
+
 - casper模块、capture截图、getTitle()或者页面信息、evaluate脚本注入、监听console、request
 	参数设置pageSettings、viewportSize、userAgent、debug、提供了写脚本工具__utils__、内置模块util
 	编写自己的模块patchRequire
